@@ -1,0 +1,11 @@
+{
+  "name": "hyperlocal",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/web-react", "apps/web-vue"],
+  "scripts": {
+    "dev:react": "npm run dev --workspace @hyperlocal/web-react",
+    "dev:vue": "npm run dev --workspace @hyperlocal/web-vue",
+    "build": "npm run build --workspace @hyperlocal/web-react && npm run build --workspace @hyperlocal/web-vue"
+  }
+}
